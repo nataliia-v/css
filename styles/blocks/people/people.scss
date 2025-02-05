@@ -1,0 +1,16 @@
+.people {
+  --column-count: 2;
+
+  display: grid;
+  grid-template-columns: repeat(var(--column-count), 200px);
+  justify-content: center;
+  row-gap: 40px;
+  column-gap: 30px;
+}
+
+
+@media (min-width: 1000px) {
+  .people {
+    --column-count: 4;
+  }
+}
